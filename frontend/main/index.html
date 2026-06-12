@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Multicloud DevOps Veera Sir Naresh IT Store - Shop Smart, Live Better</title>
-  <meta name="description" content="Multicloud DevOps Veera Sir Naresh IT narni multicloud ecommerce home. Fashion, mobiles, electronics, beauty, home, payments, grocery, music and more.">
+  <title>Multicloud DevOps Shubham Deshmukh Store - Shop Smart, Live Better</title>
+  <meta name="description" content="Multicloud DevOps Shubham Deshmukh narni multicloud ecommerce home. Fashion, mobiles, electronics, beauty, home, payments, grocery, music and more.">
   <link rel="icon" type="image/png" href="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1200px-Google_%22G%22_logo.svg.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap">
@@ -729,7 +729,7 @@
     <div class="topbar-inner">
       <a href="./" class="brand">
         <div class="brand-icon">M</div>
-        Multicloud DevOps shubham Deshmukh Naresh IT<span>Harshi  Store</span>
+        Multicloud DevOps shubham Deshmukh Shubham Deshmukh<span>Harshi  Store</span>
       </a>
       <div class="search-wrap">
         <input type="search" placeholder="Search for products, brands and Akki" id="searchInput">
@@ -755,7 +755,7 @@
     <div class="cats-inner" id="topCategories"></div>
   </nav>
 
-  <h1 class="app-heading"><span>Enterprise E-Commerce Application with Microservices – Veera Sir</span></h1>
+  <h1 class="app-heading"><span>Enterprise E-Commerce Application with Microservices – Shubham Deshmukh</span></h1>
 
   <div class="banner-wrap">
     <div class="hero-deal-grid">
@@ -1009,7 +1009,7 @@
   </section>
 
   <footer class="footer">
-    <strong>Multicloud DevOps Veera Sir Naresh IT Store</strong> - Multicloud DevOps Veera Sir Store<br>
+    <strong>Multicloud DevOps Shubham Deshmukh Store</strong> - Multicloud DevOps Shubham Deshmukh Store<br>
     <span style="margin-top:6px;display:block;font-size:11px;">Secure payments - Fast delivery - 24/7 support - Live service activity</span>
   </footer>
 
@@ -1019,7 +1019,7 @@
       <button class="form-tab active" id="tab-login" onclick="switchTab('login')" style="display:none;">Login</button>
       <button class="form-tab" id="tab-signup" onclick="switchTab('signup')" style="display:none;">Sign Up</button>
       <span id="authTitle" style="display:none;">Welcome Back</span>
-      <span id="authSubtitle" style="display:none;">Login to your Multicloud DevOps Veera Sir Naresh IT Store account</span>
+      <span id="authSubtitle" style="display:none;">Login to your Multicloud DevOps Shubham Deshmukh Store account</span>
 
       <div class="auth-form-panel auth-sign-up" id="signupForm">
         <form action="#" onsubmit="event.preventDefault(); document.getElementById('signupStep2').style.display === 'block' ? doSignupOtp() : doSignup();">
@@ -1073,7 +1073,7 @@
       <div class="auth-overlay-container">
         <div class="auth-gradient">
           <div class="auth-overlay-panel auth-left">
-            <h2>Welcome Back to Multi Cloud DevOps Veera Sir Ecommerce Application</h2>
+            <h2>Welcome Back to Multi Cloud DevOps Shubham Deshmukh Ecommerce Application</h2>
             <p>To keep connected with us please login with your personal info</p>
             <button class="auth-ghost" type="button" id="signIn" onclick="switchTab('login')">Sign In</button>
           </div>
@@ -1546,11 +1546,11 @@
     function downloadReceipt() {
       if (!requireLogin("Please login to download receipt")) return;
       if (!latestOrder) return;
-      const lines = [`Multicloud DevOps Veera Sir Naresh IT Store Receipt - Order #${latestOrder.id}`, `Date: ${latestOrder.created_at}`, `Name: ${latestOrder.shipping_name}`, `Email: ${latestOrder.shipping_email}`, `Phone: ${latestOrder.shipping_phone || "N/A"}`, `Address: ${latestOrder.shipping_address || "N/A"}`, "", ...(latestOrder.items || []).map((i) => `- ${i.product_name} x${i.quantity} = ${formatRs(i.subtotal || 0)}`), "", `TOTAL: ${formatRs(latestOrder.total_amount)}`, "Status: PLACED - Payment Successful"];
+      const lines = [`Multicloud DevOps Shubham Deshmukh Store Receipt - Order #${latestOrder.id}`, `Date: ${latestOrder.created_at}`, `Name: ${latestOrder.shipping_name}`, `Email: ${latestOrder.shipping_email}`, `Phone: ${latestOrder.shipping_phone || "N/A"}`, `Address: ${latestOrder.shipping_address || "N/A"}`, "", ...(latestOrder.items || []).map((i) => `- ${i.product_name} x${i.quantity} = ${formatRs(i.subtotal || 0)}`), "", `TOTAL: ${formatRs(latestOrder.total_amount)}`, "Status: PLACED - Payment Successful"];
       const blob = new Blob([lines.join("\n")], {type:"text/plain"});
       const a = document.createElement("a");
       a.href = URL.createObjectURL(blob);
-      a.download = `Multicloud DevOps Veera Sir Naresh IT Store_Receipt_${latestOrder.id}.txt`;
+      a.download = `Multicloud DevOps Shubham Deshmukh Store_Receipt_${latestOrder.id}.txt`;
       a.click();
       setTimeout(() => URL.revokeObjectURL(a.href), 500);
     }
@@ -1560,7 +1560,7 @@
       document.getElementById("tab-login").classList.toggle("active", tab === "login");
       document.getElementById("tab-signup").classList.toggle("active", tab === "signup");
       document.getElementById("authTitle").textContent = tab === "login" ? "Welcome Back" : "Create Account";
-      document.getElementById("authSubtitle").textContent = tab === "login" ? "Login to your Multicloud DevOps Veera Sir Naresh IT Store account" : "Sign up to unlock shopping and history";
+      document.getElementById("authSubtitle").textContent = tab === "login" ? "Login to your Multicloud DevOps Shubham Deshmukh Store account" : "Sign up to unlock shopping and history";
     }
     async function doLogin() {
       const email = document.getElementById("loginEmail").value.trim();
